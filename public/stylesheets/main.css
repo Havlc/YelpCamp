@@ -1,3 +1,6 @@
+html {
+	min-height: 100%;
+}
 body {
     background: lightgreen;
 }
@@ -29,9 +32,11 @@ body {
 }
 
 footer {
-	display: flex;
-	justify-content: center;
+	position: fixed;
+	bottom: 0;
+	text-align: center;
 	background: darkgreen;
 	color: white;
-	min-height: 10%;
+	min-height: 4%;
+	width: 100%;
 }

@@ -23,9 +23,9 @@ const   commentRoutes    = require("./routes/comments"),
 //mongoose.connect(url,{useNewUrlParser:true});
 
 //mongoose.connect(process.env.DATABASEURL);
-const MONGODB_URI = process.env.MONGODB_URI
+
 //mongoose.connect("mongodb://localhost:27017/yelp_camp_v12",{useNewUrlParser:true});
-mongoose.connect(MONGODB_URI, {
+mongoose.connect(process.env.MONGODB_URI, {
         useNewUrlParser: true,
         useCreateIndex: true
 }).then(() => {
