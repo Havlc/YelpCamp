@@ -25,10 +25,10 @@ const   commentRoutes    = require("./routes/comments"),
 //mongoose.connect(process.env.DATABASEURL);
 
 //mongoose.connect("mongodb://localhost:27017/yelp_camp_v12",{useNewUrlParser:true});
-mongoose.connect(process.env.MONGODB_URI, {
+mongoose.connect(process.env.MONGODB_URI/*, {
         useNewUrlParser: true,
         useCreateIndex: true
-}).then(() => {
+}*/).then(() => {
     console.log("Connected to DB!");
 }).catch(err => {
     console.log("ERROR", err.message);
